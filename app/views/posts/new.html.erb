@@ -1,0 +1,21 @@
+<h1>Add posts</h1>
+
+<%= form_with(model: @posts, url: posts_path,method: :post) do |form| %>
+
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+
+    <br>
+    <br>
+
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+
+    <br>
+    <br>
+
+    <%= form.submit %>
+
+
+
+<% end %>

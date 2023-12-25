@@ -1,0 +1,13 @@
+<h1>Home page for BLOG POSTS</h1>
+
+<h1>All Posts</h1>
+
+<ul>
+  <% @post.each do |post| %>
+    <li>
+      <!-- Print attributes of each post -->
+      <strong>Title:</strong> <%= post.title %><br>
+      <strong>Content:</strong> <%= post.body %>
+    </li>
+  <% end %>
+</ul>
